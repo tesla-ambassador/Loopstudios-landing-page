@@ -1,0 +1,750 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --Dark-Gray: hsl(0, 0%, 55%);
+    --Very-Dark-Gray: hsl(0, 0%, 41%);
+}
+
+    /* misc */
+*{
+    margin: 0;
+}
+h1, h2 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+body {
+    font-family: 'Alata', sans-serif;
+}
+.dark-grey {
+    color:hsl(0, 0%, 41%);
+}
+.light-grey {
+    color:hsl(0, 0%, 55%);
+}
+     /* hamburger menu */
+.hamburger-links {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 2rem;
+    padding: 5px 0px 5px 30px ;
+    margin-left: 5rem;
+}
+.icon-close {
+    position: absolute;
+    right: 13rem;
+    top: 5rem;
+}
+#pop-up-links {
+    background:hsl(0, 0%, 0%);
+    height:90vh;
+    position:absolute;
+    top: 0;
+    width: 100%;
+    display: none;
+}
+.logo-top-menu {
+    padding-left: 30px;
+    padding-bottom: 60px;
+    margin-top: 5.75rem;
+    margin-left: 5rem;
+}
+.icon {
+    position: absolute;
+    right: 12.8rem;
+    top: 4.8rem;
+    display: none;
+} 
+    /* top-section */
+.top {
+    height: 90vh;
+    background: url('./images/desktop/image-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--White);
+    position: relative;
+}
+
+.logo-top {
+    margin-left: 10rem;
+    margin-top: 5rem;
+}
+
+.main-nav {
+    position: absolute;
+    right: 8rem;
+    top: 5rem; 
+}
+.main-nav a {
+    font-size: 15px;
+    display: inline;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    position: relative;
+}
+
+.main-nav a::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: hsl(0, 0%, 100%);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: .3s;
+}
+.main-nav a:hover::after {
+    width: 100%;
+}
+
+.title {
+    font-size: 3rem;
+    border: 1px white solid;
+    width: 35rem;
+    padding: 2.5rem;
+    margin-left: 10rem;
+    margin-top: 7rem;
+    line-height: 4rem;
+}
+
+    /* showcase */
+.showcase {
+    margin: 9rem 8rem 0 10rem;
+    display: flex;
+}
+
+.showcase-image {
+    position: relative;
+}
+.mobile-size {
+    display: none;
+}
+.showcase-article {
+    position: absolute;
+    background: hsl(0, 0%, 100%);
+    width: 27rem;
+    align-self: flex-end;
+    right: 15rem;
+    padding: 60px 60px 0px 60px;
+    justify-self: end;
+}
+.showcase-article h2 {
+    padding-bottom: 20px;
+    margin-top: 2.5rem;
+    text-align: justify;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+.showcase-article p {
+    text-align: justify;
+}
+
+    /* gallery section*/
+
+.gallery-section {
+    margin: 10rem 8rem 0 10rem;
+    position: relative;
+}
+
+.button {
+    background-color: white;
+    border: 1px hsl(0, 0%, 0%) solid;
+    color: black;
+    letter-spacing: 2px;
+    width: 7rem;
+    padding: 8px 10px 8px 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.button:hover {
+    cursor: pointer;
+    background:hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+}
+
+.gallery-section h2 {
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    padding-bottom: 60px;
+}
+
+    /* gallery-images */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 140vh;
+    grid-gap: 10px;
+}
+    /* images normally */
+.deep-earth {
+    background: url('./images/desktop/image-deep-earth.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition: .3s ease-in-out;
+}
+.night-arcade {
+    background: url('./images/desktop/image-night-arcade.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition: .3s ease-in-out;
+}
+.soccer-team {
+    background: url('./images/desktop/image-soccer-team.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition: .3s ease-in-out;
+}
+.grid {
+    background: url('./images/desktop/image-grid.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition: .3s ease-in-out;
+}
+.from-above {
+    background: url('./images/desktop/image-from-above.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition: .3s ease-in-out;
+}
+.borealis {
+    background: url('./images/desktop/image-pocket-borealis.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition: .3s ease-in-out;
+}
+.curiosity {
+    background: url('./images/desktop/image-curiosity.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition: .3s ease-in-out;
+}
+.fish-eye {
+    background: url('./images/desktop/image-fisheye.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition: .3s ease-in-out;
+}
+.reveal:hover {
+    position: relative;
+    border: 2px black solid;
+}
+
+.reveal:hover span {
+    color: black;
+}
+
+.reveal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.reveal:hover::before {
+    background: rgba(179, 179, 179, 0.5);
+}
+
+    /* images with hover effect */
+.deep-earth:hover {
+    cursor: pointer;
+    transform: translateY(-1rem);
+}
+.night-arcade:hover  {
+    cursor: pointer;
+    transform: translateY(-1rem);
+}
+.soccer-team:hover  {
+    cursor: pointer;
+    transform: translateY(-1rem);
+}
+.grid:hover  {
+    cursor: pointer;
+    transform: translateY(-1rem);
+}
+.from-above:hover  {
+    cursor: pointer;
+    transform: translateY(1rem);
+}
+.borealis:hover  {
+    cursor: pointer;
+    transform: translateY(1rem);
+}
+.curiosity:hover  {
+    cursor: pointer;
+    transform: translateY(1rem);
+}
+.fish-eye:hover  {
+    cursor: pointer;
+    transform: translateY(1rem);
+}
+.image-text {
+    color: hsl(0, 0%, 100%);
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute; 
+    margin-left: 3rem;
+    padding-bottom: 2rem;
+    bottom: 0;
+}
+.image-text:hover {
+    color: black;
+    z-index: 2;
+}
+   /* footer */
+#footer {
+    background:hsl(0, 0%, 0%);
+    margin-top: 10rem;
+    height: 20vh;
+    color: white;
+    display: flex;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.logo-bottom {
+    margin-left: 10rem;
+    margin-top: 3rem;
+    padding-bottom: 10px;
+}
+
+.nav ul li{
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+}
+.bottom-nav ul {
+    margin-left: 10rem;
+    padding: 10px 0 10px 0;
+}
+
+.bottom-nav ul li {
+    padding-right: 10px;
+}
+
+.side-footer {
+    top: 3rem;
+    right: 8rem;
+    position: absolute;
+}
+.socials {
+    padding-bottom: 28px;
+}
+.socials img {
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+    /* media queries */
+@media screen and (max-width: 1252px) {
+    /* top section*/
+.logo-top {
+    margin-left: 5rem;
+}
+.title {
+    margin-left: 5rem;
+    width: 30rem;
+    font-size: 2.5rem;
+}
+#main-nav {
+    right: 5rem;
+}
+    
+    /* showcase */
+.showcase {
+    margin: 8rem 5rem 0 5rem;
+}
+.showcase-article {
+    width: 20rem;
+    right: 10rem; 
+}
+.showcase-article h2 {
+    font-size: 2rem;
+}
+
+    /* gallery-section */
+.gallery-section {
+    margin: 8rem 5rem 5rem;
+}
+.gallery-section h2 {
+    font-size: 2rem;
+}  
+.image-text {
+    font-size: 1.5rem;
+}
+.logo-bottom {
+    margin-left: 5rem
+}
+.bottom-nav ul {
+    margin-left: 5rem;
+}
+.side-footer {
+    right: 5rem;
+}
+}
+
+@media screen and (max-width: 1000px) {
+    /* top section*/
+.logo-top {
+    margin-left: 3rem;
+}
+.title {
+    margin-left: 3rem;
+    width: 25rem;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+#main-nav {
+    right: 3rem;
+}
+    
+    /* showcase */
+.showcase {
+    margin: 8rem 3rem 0 3rem;
+}
+.showcase-article {
+    width: 16rem;
+    right: 2rem; 
+}
+.showcase-article h2 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+    /* gallery-section */
+.gallery-section {
+    margin: 8rem 3rem 0 3rem;
+}
+.gallery-section h2 {
+    font-size: 1.5rem;
+}  
+.image-text {
+    font-size: 1.5rem;
+}
+.logo-bottom {
+    margin-left: 3rem;
+}
+.bottom-nav ul {
+    margin-left: 3rem;
+}
+.side-footer {
+    right: 3rem;
+}
+}
+@media screen and (max-width: 830px) {
+    /* top section */
+.title {
+    width: 22rem;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    margin-top: 10rem;
+    padding: 10px;
+}
+    /* showcase section */
+.showcase {
+    flex-direction: column;
+}
+/* .showcase-image {
+    height: 10vh;
+} */
+.showcase-article {
+    position: static;
+    width: 90%;
+    margin-top: 0;
+    padding-top: 0;
+}
+.showcase-article h2 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+}
+.footer {
+    width: 100%;
+}
+}
+@media screen and (max-width: 700px) {
+.main-nav {
+        display: none;
+        transition: display .3s;
+    }
+.icon {
+        display: block;
+    }
+    /* showcase section */
+.desktop-size {
+        display: none;
+    }
+.mobile-size {
+        display: block;
+        width: 100%;
+    }
+    /* gallery section */
+.gallery-section h2 {
+        font-size: 2.5rem;
+        letter-spacing: normal;
+    }
+    /* gallery images */
+.gallery-container {
+    display: grid;
+    grid-template-columns: none;
+}
+    /* images normally */
+.deep-earth {
+        background: url('./images/mobile/image-deep-earth.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        transition: .3s ease-in-out;
+    }
+.night-arcade {
+        background: url('./images/mobile/image-night-arcade.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        transition: .3s ease-in-out;
+    }
+.soccer-team {
+        background: url('./images/mobile/image-soccer-team.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        transition: .3s ease-in-out;
+    }
+.grid {
+        background: url('./images/mobile/image-grid.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        transition: .3s ease-in-out;
+    }
+.from-above {
+        background: url('./images/mobile/image-from-above.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        transition: .3s ease-in-out;
+    }
+.borealis {
+        background: url('./images/mobile/image-pocket-borealis.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        transition: .3s ease-in-out;
+    }
+.curiosity {
+        background: url('./images/mobile/image-curiosity.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        transition: .3s ease-in-out;
+    }
+.fish-eye {
+        background: url('./images/mobile/image-fisheye.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        transition: .3s ease-in-out;
+    }
+.image-text {
+        text-align: center;
+        top: 1.5rem;
+}    
+        /* images with hover effect */
+.deep-earth:hover {
+            cursor: pointer;
+            transform: translateX(1rem);
+        }
+.night-arcade:hover  {
+                    cursor: pointer;
+            transform: translateX(1rem);
+        }
+.soccer-team:hover  {
+            cursor: pointer;
+            transform: translateX(1rem);
+        }
+.grid:hover  {
+            cursor: pointer;
+            transform: translateX(1rem);
+        }
+.from-above:hover  {
+            cursor: pointer;
+            transform: translateX(1rem);
+        }
+.borealis:hover  {
+            cursor: pointer;
+            transform: translateX(1rem);
+        }
+.curiosity:hover  {
+            cursor: pointer;
+            transform: translateX(1rem);
+        }
+.fish-eye:hover  {
+            cursor: pointer;
+            transform: translateX(1rem);
+        }
+}
+@media screen and (max-width: 655px) {
+    /* top section */
+.top {
+    background: url('./images/mobile/image-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 120vh;
+}
+.title {
+    width: 10rem;
+}
+ /* hamburger menu */
+.icon {
+    right: 5rem;
+}
+.icon-close {
+    right: 5.1rem;
+}
+.logo-top-menu {
+    margin-left: 2rem;
+}
+a {
+    margin-left: 2rem;
+}
+ /* top section */
+.logo-top {
+    margin-left: 2rem;
+    margin-top: 5.5rem;
+}
+.title {
+    width: 20rem;
+    font-size: 1.5rem;
+    align-items: center;
+}
+    /* showcase section */
+.showcase {
+    display: flex;
+    flex-direction: column;
+}
+.showcase-article {
+    width: 80%;
+    text-align: center;
+}
+.showcase-article h2 {
+    font-size: 1.5rem;
+    line-height: 1.25rem;
+    text-align: center;
+}
+.button {
+    position: static;
+    margin-top: 10px;
+}
+.button-container {
+    text-align: center;
+}
+    /* gallery section */
+.gallery-section h2 {
+    font-size: 1.8rem;
+    padding-bottom: 5px;
+    text-align: center;
+}
+.image-text {
+    text-align: center;
+    padding-left: 30px;
+}
+    /* footer  */
+#footer {
+    display: flex;
+    flex-direction: column;
+    height: 55vh;
+    align-items: center;
+    width: 100%;
+}
+.logo-bottom {
+    margin-left: 0;
+}
+.side-footer {
+    position: static;
+    /* text-align: center; */
+}
+.bottom-nav ul li {
+    display: block;
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+}
+.bottom-nav ul {
+    padding: 10px 0 10px 0px;
+}
+.socials {
+    padding-bottom: 5px;
+    text-align: center;
+}
+}
+@media screen and (max-width: 430px) {
+    /* top section */
+.title {
+    width: 75%;
+}
+ /* hamburger menu */
+ .icon {
+    right: 2rem;
+}
+.icon-close {
+    right: 2.1rem;
+}
+.logo-top-menu {
+    margin-left: 1rem;
+}
+a {
+    margin-left: 1rem;
+}
+    /* showcase section */
+.showcase {
+    margin: 4rem 2rem 0 2rem;
+}
+.showcase-article {
+    text-align: center;
+    width: 75%;
+}
+#footer {
+    height: 53vh;
+}    
+}
+@media screen and (max-width: 376px) {
+    /* top section */
+.title {
+    width: 70%;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    margin-top: 15rem;
+}
+.icon {
+    top: 6rem;
+}
+.icon-close {
+    top: 6rem;
+}
+    /* showcase section */
+.showcase {
+    margin: 4rem 1.5rem 0 1.5rem;
+}
+.showcase-article {
+    text-align: center;
+    right: 0;
+    width: 70%;
+}
+    /* gallery section */
+.gallery-section {
+    margin-top: 2rem;
+}
+}
